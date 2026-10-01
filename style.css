@@ -80,9 +80,30 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 30px;
 }
-
+/*
 body {
     background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+} */
+
+body {
+    background-color: var(--paper);
+
+    background-image:
+        linear-gradient(
+            rgba(17, 18, 16, 0.82),
+            rgba(17, 18, 16, 0.82)
+        ),
+        url("images/background-image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.6;
@@ -424,8 +445,8 @@ h2 {
 
 .identity-card {
     top: 25px;
-    left: 8%;
-    transform: rotate(-4deg);
+    left: -1%;
+    transform: rotate(0deg);
 }
 
 .paper-label {
@@ -456,6 +477,7 @@ h2 {
 .identity-info {
     display: grid;
     gap: 2px;
+
 }
 
 .identity-info strong {
@@ -468,7 +490,7 @@ h2 {
     font-size: 0.63rem;
 }
 
-.stamp {
+/* .stamp {
     position: absolute;
     right: 15px;
     bottom: 22px;
@@ -480,24 +502,25 @@ h2 {
     font-weight: 900;
     letter-spacing: 1px;
     text-align: center;
-    transform: rotate(8deg);
-}
+    transform: rotate(0deg);
+} */
 
+/*
 .sticky-note {
     position: absolute;
-    top: 0;
-    right: 2%;
-    width: 150px;
-    height: 130px;
+    top: 25px;
+    right: 0%;
+    width: 200px;
+    height: 245px;
     padding: 17px;
-    background: var(--yellow);
+    background-color: #03163c;
     box-shadow: 4px 8px 0 rgba(0,0,0,0.32);
-    transform: rotate(5deg);
+    transform: rotate(0deg);
 }
 
 .sticky-note span {
     font-family: Arial, Helvetica, sans-serif;
-    color: #d0b76b;
+    color: #e47a4d;
     font-size: 0.5rem;
     font-weight: 800;
     letter-spacing: 1.3px;
@@ -505,24 +528,26 @@ h2 {
 }
 
 .sticky-note p {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 0.94rem;
     line-height: 1.15;
 }
 
+
 .mini-terminal {
     position: absolute;
     right: 0;
-    bottom: 25px;
-    width: 245px;
+    bottom: 114px;
+    width: 200px;
+    height: 105px;
     padding: 17px;
     background: #181a17;
     color: #d4d0c3;
     box-shadow: 6px 10px 0 rgba(0,0,0,0.38);
-    transform: rotate(2deg);
+    transform: translateX(0px) rotate(0deg);
     font-family: "Courier New", monospace;
     font-size: 0.62rem;
-}
+} 
 
 .terminal-head {
     display: flex;
@@ -541,6 +566,7 @@ h2 {
     color: #e47a4d;
     font-weight: 400;
 }
+*/
 
 .scroll-hint {
     position: absolute;
