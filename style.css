@@ -10,7 +10,7 @@
     --green: #81956e;
     --white: #1b1d19;
     --sidebar: 230px;
-    --content: 1180px;
+    --content: min(1350px, 90vw);
 }
 
 .certificates-page {
@@ -270,7 +270,8 @@ main {
 }
 
 .workspace-section {
-    width: min(var(--content), calc(100% - 90px));
+    width: var(--content);
+    max-width: calc(100% - 90px);
     min-height: 100vh;
     margin: 0 auto;
     padding: 125px 0 100px;
@@ -1300,6 +1301,7 @@ footer {
     }
 }
 
+/* h2 font-size of my name */
 .medium-heading {
     font-size: 2.5rem;
 }
