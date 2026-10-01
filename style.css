@@ -269,6 +269,7 @@ main {
     margin-left: var(--sidebar);
 }
 
+
 .workspace-section {
     width: var(--content);
     max-width: calc(100% - 90px);
