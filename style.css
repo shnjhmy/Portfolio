@@ -1132,7 +1132,7 @@ footer {
     .mobile-menu {
         position: fixed;
         inset: 70px 0 auto 0;
-        z-index: 900;
+        z-index: 1001;
         display: block;
         padding: 15px 22px 22px;
         background: rgba(17,18,16,0.98);

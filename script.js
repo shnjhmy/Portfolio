@@ -19,16 +19,11 @@ if (menuButton && mobileMenu) {
 mobileLinks.forEach(link => {
     link.addEventListener("click", event => {
         const targetSelector = link.getAttribute("href");
-        const target = targetSelector
-            ? document.querySelector(targetSelector)
-            : null;
+        const target = targetSelector ? document.querySelector(targetSelector) : null;
 
         if (target) {
             event.preventDefault();
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
             history.pushState(null, "", targetSelector);
         }
 
