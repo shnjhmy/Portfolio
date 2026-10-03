@@ -1132,7 +1132,7 @@ footer {
     .mobile-menu {
         position: fixed;
         inset: 70px 0 auto 0;
-        z-index: 1001;
+        z-index: 900;
         display: block;
         padding: 15px 22px 22px;
         background: rgba(17,18,16,0.98);
@@ -1171,7 +1171,6 @@ footer {
     .workspace-section {
         width: calc(100% - 44px);
         padding-top: 105px;
-        scroll-margin-top: 90px;
     }
 
     .hero-grid,
@@ -1454,4 +1453,28 @@ main {
     min-height: calc(100vh - 70px);
     padding-top: 82px;
     margin-top: 0;
+}
+
+
+/* MOBILE NAVIGATION INTERACTION FIX */
+@media (max-width: 800px) {
+    .topbar {
+        z-index: 2000;
+    }
+
+    .menu-btn {
+        position: relative;
+        z-index: 2001;
+        pointer-events: auto;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-menu {
+        z-index: 1500;
+    }
+
+    .workspace-section {
+        scroll-margin-top: 90px;
+    }
 }
