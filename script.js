@@ -9,17 +9,31 @@ const navItems = document.querySelectorAll(".nav-item");
 const sections = document.querySelectorAll("section[id]");
 
 // Mobile navigation
-if (menuButton) {
+if (menuButton && mobileMenu) {
     menuButton.addEventListener("click", () => {
         const open = mobileMenu.classList.toggle("open");
-        menuButton.setAttribute("aria-expanded", open);
+        menuButton.setAttribute("aria-expanded", String(open));
     });
 }
 
 mobileLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        mobileMenu.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
+    link.addEventListener("click", event => {
+        const targetSelector = link.getAttribute("href");
+        const target = targetSelector
+            ? document.querySelector(targetSelector)
+            : null;
+
+        if (target) {
+            event.preventDefault();
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+            history.pushState(null, "", targetSelector);
+        }
+
+        mobileMenu?.classList.remove("open");
+        menuButton?.setAttribute("aria-expanded", "false");
     });
 });
 

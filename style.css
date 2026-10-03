@@ -1171,6 +1171,7 @@ footer {
     .workspace-section {
         width: calc(100% - 44px);
         padding-top: 105px;
+        scroll-margin-top: 90px;
     }
 
     .hero-grid,
