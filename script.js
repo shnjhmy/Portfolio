@@ -1,7 +1,3 @@
-// =====================================================
-// PERSONAL WORKSPACE PORTFOLIO — INTERACTIONS
-// =====================================================
-
 const menuButton = document.querySelector(".menu-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileLinks = document.querySelectorAll(".mobile-menu a");
