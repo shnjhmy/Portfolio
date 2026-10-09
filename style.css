@@ -1454,3 +1454,27 @@ main {
     padding-top: 82px;
     margin-top: 0;
 }
+
+
+/* MOBILE NAVIGATION INTERACTION FIX */
+@media (max-width: 800px) {
+    .topbar {
+        z-index: 2000;
+    }
+
+    .menu-btn {
+        position: relative;
+        z-index: 2001;
+        pointer-events: auto;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .mobile-menu {
+        z-index: 1500;
+    }
+
+    .workspace-section {
+        scroll-margin-top: 90px;
+    }
+}
